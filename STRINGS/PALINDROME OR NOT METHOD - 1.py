@@ -1,6 +1,10 @@
+def ispalindrome(string):
+    
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
 string = input("Enter String  : ")
 
-if string == string[::-1]:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+print(ispalindrome(string))
